@@ -2,28 +2,18 @@ package handson3;
 
 public class ForEach {
     public static void main(String[] args) {
+        int[] deretanAngka = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
 
-        int[] banyakAngka = new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
-
-        for (int angka : banyakAngka){
-            if (angka % 3) {
+        for (int angka : deretanAngka) {
+            if (angka == 15) {
                 break;
             }
-            if (angka == 14) {
+            if (angka % 3 == 0) {
                 continue;
             }
-
-
-
-//        for (int i = 0; i < banyakAngka.length ; i++){
-//            if ( (i + 1) % 3 == 0){
-//                continue;
-//            }
-//            if ( i == 14){
-//                break;
-            }
-            System.out.println("Angka ke " + ( banyakAngka + 1) + ": " + angka[i]);
+            System.out.println("Angka ke- " + angka + ": " + angka);
         }
     }
 }
+
 
